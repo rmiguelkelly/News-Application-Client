@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct NewsAppApp: App {
+struct NewsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+                    .preferredColorScheme(.dark)
+            }
         }
     }
 }
